@@ -91,22 +91,22 @@ COQMKTOP?="$(COQBIN)coqmktop"
 VFILES:=Preface.v\
   Basics.v\
   Induction.v\
-  Lists.v\
-  Poly.v\
-  Tactics.v\
-  Logic.v\
-  IndProp.v\
-  Maps.v\
-  ProofObjects.v\
-  IndPrinciples.v\
-  Rel.v\
-  Imp.v\
-  ImpParser.v\
-  ImpCEvalFun.v\
-  Extraction.v\
-  Auto.v\
-  Postscript.v\
-  Bib.v
+#  Lists.v\
+#  Poly.v\
+#  Tactics.v\
+#  Logic.v\
+#  IndProp.v\
+#  Maps.v\
+#  ProofObjects.v\
+#  IndPrinciples.v\
+#  Rel.v\
+#  Imp.v\
+#  ImpParser.v\
+#  ImpCEvalFun.v\
+#  Extraction.v\
+#  Auto.v\
+#  Postscript.v\
+#  Bib.v
 
 ifneq ($(filter-out archclean clean cleanall printenv,$(MAKECMDGOALS)),)
 -include $(addsuffix .d,$(VFILES))
