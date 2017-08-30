@@ -1270,6 +1270,10 @@ Proof.
         then converting it to unary should yield the same result as
         first converting it to unary and then incrementing. *)
 
+Inductive bin' : Type := (* FILL IN HERE *).
+
+Definition bin : Type := bin'. (* DO NOT TOUCH *)
+
 (* FILL IN HERE *)
 (** [] *)
 
