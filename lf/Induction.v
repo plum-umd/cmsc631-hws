@@ -536,6 +536,11 @@ Proof.
     do so! *)
 
 (* FILL IN HERE *)
+
+Inductive bin' : Type := (* COPY AND PASTE DEFINITION FROM Basics.v *).
+
+Definition bin : Type := bin'. (* DO NOT TOUCH *)
+
 (** [] *)
 
 (** **** Exercise: 5 stars, advanced (binary_inverse)  *)
@@ -563,11 +568,6 @@ Proof.
 
     Again, feel free to change your earlier definitions if this helps
     here. *)
-
-Inductive bin' : Type := (* COPY AND PASTE DEFINITION FROM Basics.v *).
-
-Definition bin : Type := bin'. (* DO NOT TOUCH *)
-
 (* FILL IN HERE *)
 (** [] *)
 
