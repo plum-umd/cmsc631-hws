@@ -91,8 +91,8 @@ COQMKTOP?="$(COQBIN)coqmktop"
 VFILES:=Preface.v\
   Basics.v\
   Induction.v\
-#  Lists.v\
-#  Poly.v\
+  Lists.v\
+  Poly.v\
 #  Tactics.v\
 #  Logic.v\
 #  IndProp.v\
