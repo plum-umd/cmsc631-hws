@@ -93,8 +93,8 @@ VFILES:=Preface.v\
   Induction.v\
   Lists.v\
   Poly.v\
-#  Tactics.v\
-#  Logic.v\
+  Tactics.v\
+  Logic.v\
 #  IndProp.v\
 #  Maps.v\
 #  ProofObjects.v\
