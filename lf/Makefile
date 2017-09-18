@@ -95,8 +95,8 @@ VFILES:=Preface.v\
   Poly.v\
   Tactics.v\
   Logic.v\
-#  IndProp.v\
-#  Maps.v\
+  IndProp.v\
+  Maps.v\
 #  ProofObjects.v\
 #  IndPrinciples.v\
 #  Rel.v\
