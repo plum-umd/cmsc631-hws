@@ -92,26 +92,26 @@ VFILES:=Maps.v\
   Imp.v\
   Preface.v\
   Equiv.v\
-  Hoare.v\
-  Hoare2.v\
-  HoareAsLogic.v\
-  Smallstep.v\
-  Types.v\
-  Stlc.v\
-  StlcProp.v\
-  MoreStlc.v\
-  Sub.v\
-  Typechecking.v\
-  Records.v\
-  References.v\
-  RecordSub.v\
-  Norm.v\
-  LibTactics.v\
-  UseTactics.v\
-  UseAuto.v\
-  PE.v\
-  Postscript.v\
-  Bib.v
+#  Hoare.v\
+#  Hoare2.v\
+#  HoareAsLogic.v\
+#  Smallstep.v\
+#  Types.v\
+#  Stlc.v\
+#  StlcProp.v\
+#  MoreStlc.v\
+#  Sub.v\
+#  Typechecking.v\
+#  Records.v\
+#  References.v\
+#  RecordSub.v\
+#  Norm.v\
+#  LibTactics.v\
+#  UseTactics.v\
+#  UseAuto.v\
+#  PE.v\
+#  Postscript.v\
+#  Bib.v
 
 ifneq ($(filter-out archclean clean cleanall printenv,$(MAKECMDGOALS)),)
 -include $(addsuffix .d,$(VFILES))

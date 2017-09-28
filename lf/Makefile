@@ -97,10 +97,10 @@ VFILES:=Preface.v\
   Logic.v\
   IndProp.v\
   Maps.v\
+  Imp.v\
 #  ProofObjects.v\
 #  IndPrinciples.v\
 #  Rel.v\
-#  Imp.v\
 #  ImpParser.v\
 #  ImpCEvalFun.v\
 #  Extraction.v\
