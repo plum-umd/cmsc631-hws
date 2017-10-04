@@ -92,8 +92,8 @@ VFILES:=Maps.v\
   Imp.v\
   Preface.v\
   Equiv.v\
-#  Hoare.v\
-#  Hoare2.v\
+  Hoare.v\
+  Hoare2.v\
 #  HoareAsLogic.v\
 #  Smallstep.v\
 #  Types.v\
