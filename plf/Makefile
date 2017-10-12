@@ -94,8 +94,7 @@ VFILES:=Maps.v\
   Equiv.v\
   Hoare.v\
   Hoare2.v\
-#  HoareAsLogic.v\
-#  Smallstep.v\
+  Smallstep.v\
 #  Types.v\
 #  Stlc.v\
 #  StlcProp.v\
