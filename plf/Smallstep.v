@@ -258,37 +258,6 @@ Definition relation (X: Type) := X->X->Prop.
 Definition deterministic {X: Type} (R: relation X) :=
   forall x y1 y2 : X, R x y1 -> R x y2 -> y1 = y2.
 
-Module SimpleArith2.
-Import SimpleArith1.
-
-Theorem step_deterministic:
-  deterministic step.
-Proof.
-  unfold deterministic. intros x y1 y2 Hy1 Hy2.
-  generalize dependent y2.
-  induction Hy1; intros y2 Hy2.
-    - (* ST_PlusConstConst *) inversion Hy2.
-      + (* ST_PlusConstConst *) reflexivity.
-      + (* ST_Plus1 *) inversion H2.
-      + (* ST_Plus2 *) inversion H2.
-    - (* ST_Plus1 *) inversion Hy2.
-      + (* ST_PlusConstConst *) 
-        rewrite <- H0 in Hy1. inversion Hy1.
-      + (* ST_Plus1 *)
-        rewrite <- (IHHy1 t1'0).
-        reflexivity. assumption.
-      + (* ST_Plus2 *) 
-        rewrite <- H in Hy1. inversion Hy1.
-    - (* ST_Plus2 *) inversion Hy2.
-      + (* ST_PlusConstConst *) 
-        rewrite <- H1 in Hy1. inversion Hy1.
-      + (* ST_Plus1 *) inversion H2.
-      + (* ST_Plus2 *)
-        rewrite <- (IHHy1 t2'0).
-        reflexivity. assumption.
-Qed.
-
-End SimpleArith2.
 
 (** There is some annoying repetition in this proof.  Each use of
     [inversion Hy2] results in three subcases, only one of which is
@@ -327,24 +296,6 @@ Ltac solve_by_invert :=
 
 (** Let's see how a proof of the previous theorem can be simplified
     using this tactic... *)
-
-Module SimpleArith3.
-Import SimpleArith1.
-
-Theorem step_deterministic_alt: deterministic step.
-Proof.
-  intros x y1 y2 Hy1 Hy2.
-  generalize dependent y2.
-  induction Hy1; intros y2 Hy2;
-    inversion Hy2; subst; try solve_by_invert.
-  - (* ST_PlusConstConst *) reflexivity.
-  - (* ST_Plus1 *)
-    apply IHHy1 in H2. rewrite H2. reflexivity.
-  - (* ST_Plus2 *)
-    apply IHHy1 in H2. rewrite H2. reflexivity.
-Qed.
-
-End SimpleArith3.
 
 (* ================================================================= *)
 (** ** Values *)
@@ -744,13 +695,6 @@ Definition bool_step_prop3 :=
 
 Theorem strong_progress : forall t,
   value t \/ (exists t', t ==> t').
-Proof.
-  (* FILL IN HERE *) Admitted.
-(** [] *)
-
-(** **** Exercise: 2 stars, optional (step_deterministic)  *)
-Theorem step_deterministic :
-  deterministic step.
 Proof.
   (* FILL IN HERE *) Admitted.
 (** [] *)
