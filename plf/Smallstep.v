@@ -396,7 +396,7 @@ Inductive step : tm -> tm -> Prop :=
       value (hence has the form [C n]).
 
     - The cases when both derivations end with [ST_Plus1] or
-      [ST_Plus2] follow by the induction hypothesis. [] *)
+      [ST_Plus2] follow by the induction hypothesis. *)
 
 (** Most of this proof is the same as the one above.  But to get
     maximum benefit from the exercise you should try to write your
