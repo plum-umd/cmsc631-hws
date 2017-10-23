@@ -95,8 +95,8 @@ VFILES:=Maps.v\
   Hoare.v\
   Hoare2.v\
   Smallstep.v\
-#  Types.v\
-#  Stlc.v\
+  Types.v\
+  Stlc.v\
 #  StlcProp.v\
 #  MoreStlc.v\
 #  Sub.v\
