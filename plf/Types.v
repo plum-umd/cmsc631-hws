@@ -636,12 +636,22 @@ Tactic Notation "normalize" :=
 (** Having seen the subject reduction property, one might
     wonder whether the opposity property -- subject _expansion_ --
     also holds.  That is, is it always the case that, if [t ==> t']
-    and [|- t' \in T], then [|- t \in T]?  If so, prove it.  If
-    not, give a counter-example.  (You do not need to prove your
-    counter-example in Coq, but feel free to do so.)
+    and [|- t' \in T], then [|- t \in T]?
 
-    (* FILL IN HERE *)
-[] *)
+    If you believe it is true, prove the lemma [subject_expansion_true] and
+    leave [subject_expansion_false] admitted. Conversely, if you believe it
+    is false, prove the lemma [subject_expansion_false] and leave [subject_expansion_true]
+    admitted. *)
+
+Definition subject_expansion := forall (t t' : tm) (T : ty), t ==> t' -> |- t' \in T -> |- t \in T.
+
+Lemma subject_expansion_true : subject_expansion.
+Proof. Admitted.
+
+Lemma subject_expansion_false : ~ subject_expansion.
+Proof. Admitted.
+
+(** [] *)
 
 (** **** Exercise: 2 stars (variation1)  *)
 (** Suppose, that we add this new rule to the typing relation:
