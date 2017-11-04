@@ -97,10 +97,9 @@ VFILES:=Maps.v\
   Smallstep.v\
   Types.v\
   Stlc.v\
-#  StlcProp.v\
-#  MoreStlc.v\
-#  Sub.v\
-#  Typechecking.v\
+  StlcProp.v\
+  MoreStlc.v\
+  Typechecking.v\
 #  Records.v\
 #  References.v\
 #  RecordSub.v\
