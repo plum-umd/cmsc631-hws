@@ -98,7 +98,7 @@ VFILES:=Preface.v\
   IndProp.v\
   Maps.v\
   Imp.v\
-#  ProofObjects.v\
+  ProofObjects.v\
 #  IndPrinciples.v\
 #  Rel.v\
 #  ImpParser.v\

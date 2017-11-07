@@ -99,6 +99,7 @@ VFILES:=Maps.v\
   Stlc.v\
   StlcProp.v\
   MoreStlc.v\
+  Sub.v\
   Typechecking.v\
 #  Records.v\
 #  References.v\
